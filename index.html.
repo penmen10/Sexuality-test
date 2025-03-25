@@ -13,13 +13,13 @@
 
   <script>
     function checkResponse() {
-      const response = document.getElementById("response").value.toLowerCase();
+      const response = document.getElementById("response").value.trim().toLowerCase();
       const output = document.getElementById("output");
 
       if (response === "yes") {
         output.textContent = "You good gang";
       } else if (response === "no") {
-        output.textContent = "FAGGOT! FAG FAG FAG FAG FAG!";
+        output.textContent = "FAGGOT! FAG FAG FAG!";
       } else {
         output.textContent = "It's a yes or no question retard, the system won't know what you're saying unless you put yes or no";
       }
